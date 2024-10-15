@@ -19,7 +19,7 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Build the Docker image
-        run: docker build . -t your_dockerhub_username/your_image_name:latest
+        run: docker build . -t magmyms/face-detection-app:latest
 
       - name: Push the Docker image
-        run: docker push your_dockerhub_username/your_image_name:latest
+        run: docker push magmyms/face-detection-app:latest
